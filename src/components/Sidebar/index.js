@@ -1,11 +1,11 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import './index.scss'
-import LogoBB from '../../assets/images/logoBB.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoBB from '../../assets/images/logoBB .png'
+// import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import {
-  faBars,
-  faClose,
+
   faEnvelope,
   faHome,
   faSuitcase,
@@ -17,7 +17,6 @@ import {
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
-import Button from '@mui/material/Button'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import { IconButton } from '@mui/material'
@@ -38,11 +37,11 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/" >
+      <Link className="logo" to="/">
         <img src={LogoBB} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="BhargavBurgul" />
+        {/* <img className="sub-logo" src={LogoSubtitle} alt="BhargavBurgul" /> */}
       </Link>
-      <nav  >
+      <nav>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#e2314f" />
         </NavLink>
@@ -68,12 +67,6 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#e2314f" />
 
-          <FontAwesomeIcon
-            icon={faClose}
-            color="#ffd700"
-            size="3x"
-            className="close-icon"
-          />
         </NavLink>
       </nav>
       <ul>
@@ -102,7 +95,7 @@ const Sidebar = () => {
         </li>
       </ul>
 
-      <div className='show-on-mobile'>
+      <div className="show-on-mobile">
         <IconButton
           className="hamburger-icon"
           id="basic-button"
@@ -154,6 +147,7 @@ const Sidebar = () => {
               setAnchorEl(null)
               navigate('/contact')
             }}
+            className="contact-link"
           >
             Contact
           </MenuItem>
