@@ -36,11 +36,14 @@ const About = () => {
           </h1>
           <p>
             I'm a passionate web developer weaving digital wonders with a
-            palette of React, JavaScript, HTML, CSS, Bootstrap, Node.js, and
-            MongoDB. My journey is fueled by a relentless pursuit of excellence,
-            guided by the philosophy of understanding the 'why' behind each line
-            of code. This curiosity not only fuels my problem-solving abilities
-            but also fuels my eagerness to embrace new technologies and stacks.
+            palette of <span>React</span> , <span> JavaScript </span>,{' '}
+            <span>jQuery</span> , <span> HTML </span> , <span>CSS</span>,{' '}
+            <span>Bootstrap</span>, <span>Node.js</span>, and
+            <span>MongoDB</span>. My journey is fueled by a relentless pursuit
+            of excellence, guided by the philosophy of understanding the 'why'
+            behind each line of code. This curiosity not only fuels my
+            problem-solving abilities but also fuels my eagerness to embrace new
+            technologies and stacks.
           </p>
           <p align="LEFT">
             My portfolio is a testament to my commitment. Through projects that
@@ -51,7 +54,8 @@ const About = () => {
             innovation. Join me in crafting the digital landscapes of tomorrow.
           </p>
           <p>
-          Let's connect and embark on a journey of innovation, learning, and limitless possibilities."
+            Let's connect and embark on a journey of innovation, learning, and
+            limitless possibilities."
           </p>
         </div>
 
